@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="with=device-width", initial-scale="1.0">
+    <title> project </title>
+    <link rel="stylesheet" href="style.css">
+                                           <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+                                                                                                                        </head>
+<body>
+    <section class="none1">
+        <nav>
+            <div class="nav-links111">
+              
+                
+                <ul> <li><a href="head%20page.html">HOME</a></li>
+                    <li><a href="all-about.html">ABOUT</a></li>
+                    <li><a href="terms.html">LESSONS</a></li>
+                    <li><a href="">PRACTICE</a></li>
+                    <li><a href="">TIPS</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </section>
+<section class="term1">
+  <h1 style="text-align: center; padding: 35px; font-size: 35px; color: black;">Term 2</h1>  
+<button class="collapsible">11.4.1.1 describe relational databases and their purpose <br>11.4.1.2 use the terms attribute, object, index, record, table and tuple to describe databases <br>11.4.1.3 explain the difference between primary composite and foreign key<br> 11.4.1.4 define data types when creating a database  </button>
+<div class="content">
+    <br>
+  <p> <b>11.4.1.1 describe relational databases and their purpose</b></p><br>
+    <p>A relational database organizes data into structured tables with columns and rows. Each table represents an entity, and the relationships between tables allow for efficient data storage, management, and retrieval. Relational databases help maintain data integrity and prevent redundancy.</p>
+<br><br>
+    <p><b>11.4.1.2 use the terms attribute, object, index, record, table and tuple to describe databases</b></p><br>
+    <ul>
+      <li><b>Attribute:</b> A characteristic or property of an entity, represented as a column in a table.</li>
+      <li><b>Object:</b> The subject or entity described by the data (e.g., a "Customer" table represents customer data).</li>
+      <li><b>Index:</b> A data structure that improves search speed and retrieval efficiency.</li>
+      <li><b>Record:</b> A single, unique row within a table representing one instance of an entity.</li>
+      <li><b>Table:</b> A collection of records related to a specific entity, with columns and rows.</li>
+      <li><b>Tuple:</b> Another term for a row or record in a table.</li>
+    </ul>
+<br>
+    <p><b>11.4.1.3 explain the difference between primary composite and foreign key</b></p><br>
+    <p><b>Primary Key:</b> A unique identifier for each record in a table.<br>
+    <b>Composite Key:</b> A key made up of two or more attributes that uniquely identify a record.<br>
+    <b>Foreign Key:</b> An attribute in one table that references the primary key of another table, establishing a link between the two tables.</p>
+<br>
+    <p><b>11.4.1.4 define data types when creating a database </b></p><br>
+    <p>Data types specify what kind of data can be stored in a column, such as integer, text, date, or boolean, ensuring the data is consistent and appropriately formatted.</p>
+    <br>
+    <table>
+      <tr>
+        <th>Data Type</th>
+        <th>Description</th>
+        <th>Examples</th>
+      </tr>
+      <tr>
+        <td><b>Integer</b></td>
+        <td>Stores whole numbers without decimals.</td>
+        <td>1, -20, 150</td>
+      </tr>
+      <tr>
+        <td><b>Float/Double</b></td>
+        <td>Stores numbers with decimals, allowing for fractional values.</td>
+        <td>3.14, -45.67, 100.0</td>
+      </tr>
+      <tr>
+        <td><b>Text/String</b></td>
+        <td>Holds text or alphanumeric characters.</td>
+        <td>"John Doe", "Hello123"</td>
+      </tr>
+      <tr>
+        <td><b>Date/Time</b></td>
+        <td>Stores date and/or time values.</td>
+        <td>2023-12-01, 14:30:00</td>
+      </tr>
+      <tr>
+        <td><b>Boolean</b></td>
+        <td>Represents binary values, usually true/false or yes/no.</td>
+        <td>TRUE, FALSE</td>
+      </tr>
+      <tr>
+        <td><b>Binary</b></td>
+        <td>Used to store binary data like images, files, etc.</td>
+        <td>Binary file contents</td>
+      </tr>
+    </table>
+</div>
+    
+    
+    
+<button class="collapsible">11.4.1.7 bring connections to the third normal form (3NF) <br>11.4.1.5 define the connections between tables in database<br> 11.4.1.6 create an entity-relationship (ER) model  <br>11.4.2.1 explain the purpose of data dictionary </button>
+
+    <div class="content">
+  <br> <b><p>11.4.1.7 bring connections to the third normal form (3NF)</p> </b><br>
+<br><b><p>Third Normal Form (3NF)</b> is a database normalization rule that aims to eliminate data redundancy and dependency issues. A table is in 3NF if:
+    <ul>
+      <li>It is in Second Normal Form (2NF).</li>
+      <li>It has no transitive dependencies, meaning non-key attributes are not dependent on other non-key attributes.</li>
+        </ul>
+    <p>Benefits of 3NF include improved data integrity, reduced duplication, and optimized storage. This normalization process organizes data more efficiently by breaking down larger tables into smaller, more focused tables connected by keys.</p>
+ 
+ <br> <b><p>11.4.1.5 define the connections between tables in database</p> </b><br>
+        <p>In a relational database, connections between tables allow data to be linked and accessed efficiently. Common relationships include:</p>
+    <ul>
+      <li><b>One-to-One:</b> Each record in Table A relates to exactly one record in Table B, and vice versa.<img src="images/onetoone.PNG" alt="Entity Symbol" width="200px"></li>
+      <li><b>One-to-Many:</b> A single record in Table A can relate to multiple records in Table B.<img src="images/onetomany.PNG" alt="Entity Symbol" width="200px"></li>
+      <li><b>Many-to-Many:</b> Records in Table A can relate to multiple records in Table B and vice versa, typically implemented using a junction table.<img src="images/manytomany.PNG" alt="Entity Symbol"  width="200px"></li>
+    </ul>
+    <p>Foreign keys are used to establish these relationships, linking the primary key of one table to a corresponding column in another table, which maintains referential integrity and allows related data to be efficiently retrieved and manipulated.</p>
+ 
+       <br> <b><p>11.4.1.6 create an entity-relationship (ER) model </p> </b><br> 
+         <p>An Entity-Relationship (ER) Model visually represents database structure and the relationships between entities (tables). ER models consist of symbols to depict entities, attributes, and relationships.</p>
+    <table>
+      <tr>
+        <th>ER Model Symbol</th>
+        <th>Description</th>
+        <th>Image</th>
+      </tr>
+      <tr>
+        <td><b>Entity</b></td>
+        <td>Represents an object or concept, often a table that stores specific data, like "Customer" or "Order".</td>
+        <td><img src="images/entity.png" alt="Entity Symbol"></td>
+      </tr>
+      <tr>
+        <td><b>Attribute</b></td>
+        <td>A property or characteristic of an entity, represented as a column within a table.</td>
+        <td><img src="images/attribute.PNG" alt="Entity Symbol"></td>
+      </tr>
+      <tr>
+        <td><b>Relationship</b></td>
+        <td>A connection between two entities, indicating how data in one table relates to data in another.</td>
+        <td><img src="images/relatioship.PNG" alt="Entity Symbol"></td>
+      </tr>
+    
+    </table>
+    <p>ER Models help database designers plan the structure of the database, ensuring efficient data storage and retrieval.</p>
+  <br> <b><p>11.4.2.1 explain the purpose of data dictionary </p> </b><br> 
+         <p>A data dictionary is a centralized repository that stores metadata about database elements, providing detailed information about each attribute and table in a database. It includes descriptions of:</p>
+    <ul>
+      <li><b>Table Names:</b> Names of tables within the database.</li>
+      <li><b>Column Names:</b> Attributes or fields in each table.</li>
+      <li><b>Data Types:</b> The type of data stored in each attribute (e.g., integer, text).</li>
+      <li><b>Constraints:</b> Any rules applied to the data (e.g., NOT NULL, UNIQUE).</li>
+      <li><b>Relationships:</b> Connections between tables, defined by foreign keys and other links.</li>
+    </ul>
+    <p>Data dictionaries are essential for database management as they provide a reference for developers and administrators, helping ensure data integrity, consistency, and clarity. They also facilitate communication across teams by offering a single source of truth for database structure and standards.</p>
+ <img src="images/data_dictionary.PNG" alt="Entity Symbol">
+
+</div>
+    
+    <button class="collapsible">11.4.2.2 compare the data definition language (DDL), and the data manipulation language (DML)<br> 11.4.2.3 describe the basic SQL queries for working with tables in a database: CREATE, ALTER and DROP <br>11.4.2.4 describe the basic SQL queries for working with one table in a database: SELECT, UPDATE, INSERT and DELETE <br>11.4.2.5 use SQL SELECT for data selection in more tables </button>
+    
+<div class="content">
+    <br> <b><p>11.4.2.2 compare the data definition language (DDL), and the data manipulation language (DML) </p> </b><br> 
+   <table>
+      <tr>
+        <th>Feature</th>
+        <th>Data Definition Language (DDL)</th>
+        <th>Data Manipulation Language (DML)</th>
+      </tr>
+      <tr>
+        <td><b>Purpose</b></td>
+        <td>Defines and manages the database structure (e.g., creating, altering, or deleting tables).</td>
+        <td>Handles data within the structure (e.g., inserting, updating, and retrieving records).</td>
+      </tr>
+      <tr>
+        <td><b>Commands</b></td>
+        <td>CREATE, ALTER, DROP</td>
+        <td>SELECT, INSERT, UPDATE, DELETE</td>
+      </tr>
+      <tr>
+        <td><b>Impact</b></td>
+        <td>Modifies the schema or structure of the database.</td>
+        <td>Affects the data within the database without changing the schema.</td>
+      </tr>
+    
+    </table>
+    
+    <br> <b><p>11.4.2.3 describe the basic SQL queries for working with tables in a database: CREATE, ALTER and DROP </p> </b><br> 
+      <p>The following SQL queries are used to manage database tables, typically under DDL:</p>
+    <ul>
+      <li><b>CREATE:</b> Used to create new tables or databases, defining the structure and columns. 
+        <pre><code>CREATE TABLE Students (ID INT, Name VARCHAR(50), Age INT);</code></pre>
+      </li>
+      <li><b>ALTER:</b> Modifies an existing table by adding, modifying, or deleting columns.
+        <pre><code>ALTER TABLE Students ADD COLUMN Grade CHAR(1);</code></pre>
+      </li>
+      <li><b>DROP:</b> Deletes tables or databases, including all their data and structure.
+        <pre><code>DROP TABLE Students;</code></pre>
+      </li>
+    </ul>
+    <br> <b><p>11.4.2.4 describe the basic SQL queries for working with one table in a database: SELECT, UPDATE, INSERT and DELETE  </p> </b><br> 
+     <p>These SQL commands are part of DML and are essential for working with data within a single table:</p>
+    <ul>
+      <li><b>SELECT:</b> Retrieves data from one or more columns within a table.
+        <pre><code>SELECT Name, Age FROM Students WHERE Age > 18;</code></pre>
+      </li>
+      <li><b>INSERT:</b> Adds new records to a table.
+        <pre><code>INSERT INTO Students (ID, Name, Age) VALUES (1, 'Alice', 20);</code></pre>
+      </li>
+      <li><b>UPDATE:</b> Modifies existing records in a table.
+        <pre><code>UPDATE Students SET Age = 21 WHERE Name = 'Alice';</code></pre>
+      </li>
+      <li><b>DELETE:</b> Removes records from a table based on a condition.
+        <pre><code>DELETE FROM Students WHERE Age = 18; </code></pre>
+      </li>
+    </ul>
+    <br> <b><p>11.4.2.5 use SQL SELECT for data selection in more tables </p> </b><br> 
+     <p>When data needs to be retrieved from multiple tables, SQL JOIN operations are used. Common joins include:</p>
+    <ul>
+      <li><b>INNER JOIN:</b> Retrieves only matching records between tables.
+        <pre><code>SELECT Students.Name, Grades.Score 
+FROM Students 
+INNER JOIN Grades ON Students.ID = Grades.StudentID;</code></pre>
+      </li>
+      <li><b>LEFT JOIN:</b> Retrieves all records from the left table and matching records from the right table, with NULLs if no match is found.
+        <pre><code>SELECT Students.Name, Grades.Score 
+FROM Students 
+LEFT JOIN Grades ON Students.ID = Grades.StudentID;</code></pre>
+      </li>
+      <li><b>RIGHT JOIN:</b> Retrieves all records from the right table and matching records from the left table.
+        <pre><code>SELECT Students.Name, Grades.Score 
+FROM Students 
+RIGHT JOIN Grades ON Students.ID = Grades.StudentID;</code></pre>
+      </li>
+      <li><b>FULL JOIN:</b> Retrieves all records when there is a match in either table.
+        <pre><code>SELECT Students.Name, Grades.Score 
+FROM Students 
+FULL JOIN Grades ON Students.ID = Grades.StudentID;</code></pre>
+      </li>
+    </ul>
+    <p>Using SQL SELECT statements with joins allows for powerful data retrieval across multiple tables, facilitating complex queries and reporting.</p>
+  
+</div>
+    <button class="collapsible">11.2.1.6 use data flow diagrams (DFD) to input, process, store and output data in computing systems <br>11.2.1.7 use flow charts to input, process, store and output data in computing systems </button>
+  <div class="content">
+    <p><b>Data Flow Diagrams (DFD) Symbols</b> shows how data moves around a system.   It shows how data is captured, processed, stored and distributed within a system. A data flow diagram is a logical model of a system. 
+<br><br>
+      A data flow diagram uses four basic symbols to form a picture of a logical system.</p>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Process</td>
+          <td>Represents a process that transforms data inputs into outputs</td>
+          <td><img src="images/process_symbol.png" alt="Process Symbol" width="100"></td>
+        </tr>
+        <tr>
+          <td>Data Store</td>
+          <td>Represents where data is stored within the system</td>
+          <td><img src="images/data_store_symbol.png" alt="Data Store Symbol" width="100"></td>
+        </tr>
+        <tr>
+          <td>Data Flow</td>
+          <td>Indicates the direction of data movement in the system</td>
+          <td><img src="images/data_flow_symbol.png" alt="Data Flow Symbol" width="100"></td>
+        </tr>
+        <tr>
+          <td>External Entity</td>
+          <td>Represents external sources or destinations of data</td>
+          <td><img src="images/external_entity_symbol..png" alt="External Entity Symbol" width="100"></td>
+        </tr>
+      </tbody>
+    </table>
+      <p style="font-size: 20px;"><b> Example task</b></p><br>
+  <p>  <br>  A supermarket’s Point Of Sale (POS) system operates as follows:
+<br>• Product data (ProductID, Price, Product Description) are stored in the database, Product Database.
+<br>• A barcode is present on each shopping basket item.
+<br>• A shop assistant scans each shopping basket item with a barcode scanner.
+<br>• A process, Calculate Bill, generates a Bill which is presented to the customer.
+      <br>• The bill is itemised with Product Description, Price for each item sold.</p>
+ <p style="font-size: 20px;"><b> Answer</b></p><br>
+    
+<img src="images/dfd.png" alt="External Entity Symbol" >
+      
+        <br><br>
+    <p><b>11.2.1.7 use flow charts to input, process, store and output data in computing systems</b></p><br>
+      <p>A flowchart is a type of diagram that represents a workflow or process. A flowchart can also be defined as a diagrammatic representation of an algorithm, a step-by-step approach to solving a task.</p><br>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Start/End</td>
+          <td>Marks the beginning or end of a flowchart process</td>
+          <td><img src="images/start_end_symbol.png" alt="Start/End Symbol" width="100"></td>
+        </tr>
+        <tr>
+          <td>Process</td>
+          <td>Represents a task or action in the process flow</td>
+          <td><img src="images/process_symbol_flowchart.png" alt="Process Symbol" width="100"></td>
+        </tr>
+        <tr>
+          <td>Decision</td>
+          <td>Indicates a point where a decision is required</td>
+          <td><img src="images/decision_symbol.png" alt="Decision Symbol" width="100"></td>
+        </tr>
+        <tr>
+          <td>Input/Output</td>
+          <td>Represents an input or output in the flow of the process</td>
+          <td><img src="images/input_output_symbol.png" alt="Input/Output Symbol" width="100"></td>
+        </tr>
+      </tbody>
+    </table><br>
+      <p style="font-size: 20px;"><b> Example</b></p><br>
+    
+<img src="images/flowchart.png" alt="External Entity Symbol" >
+  </div>
+
+    <button class="collapsible">11.2.2.4 discuss the advantages and disadvantages of using prototypes when developing solutions<br>  11.2.2.5 discuss the use of prototypes based on a specific example<br> 11.2.2.6 develop a prototype for a new system  </button>
+<div class="content">
+    
+    <p><b>11.2.2.4 discuss the advantages and disadvantages of using prototypes when developing solutions</b> </p>
+     <p>Prototyping involves creating an early model or sample of a system to evaluate its features, usability, and functionality. Here are some key advantages and disadvantages:</p>
+    <h3>Advantages of Prototyping</h3>
+    <ul>
+      <li><b>Improved User Feedback:</b> Allows users to interact with a model of the system early on, leading to valuable feedback that can guide development.</li>
+      <li><b>Enhanced Communication:</b> Visual prototypes provide a clear understanding between developers and stakeholders, reducing misunderstandings.</li>
+      <li><b>Early Error Detection:</b> Identifying usability issues or design flaws in the prototype phase helps avoid costly changes later.</li>
+      <li><b>Flexibility in Design:</b> Allows developers to make adjustments based on iterative feedback, enhancing the final product’s functionality and user satisfaction.</li>
+    </ul>
+    <h3>Disadvantages of Prototyping</h3>
+    <ul>
+      <li><b>Scope Creep:</b> As users request new features, the scope may expand beyond the initial project plan, potentially causing delays.</li>
+      <li><b>Misinterpretation of Prototype:</b> Users may mistakenly view the prototype as the final product, creating unrealistic expectations for project completion.</li>
+      <li><b>High Cost and Time Investment:</b> Creating a detailed prototype can require additional time and resources, especially if numerous iterations are needed.</li>
+      <li><b>Potential Inefficiency:</b> Developers may focus on refining the prototype rather than concentrating on the complete system, which can delay actual development.</li>
+    </ul>
+    
+     <p><b>11.2.2.5 discuss the use of prototypes based on a specific example<br>11.2.2.6 develop a prototype for a new system </b> </p>
+     <p>Consider a company developing a new mobile banking application. Here’s how prototypes help in this context:</p>
+    <ul>
+      <li><b>Initial Wireframe:</b> A simple wireframe of the application screens is created to showcase the navigation and layout.</li>
+      <li><b>Feedback Gathering:</b> Users interact with the wireframe, offering feedback on elements like ease of navigation and screen transitions.</li>
+      <li><b>Interactive Prototype:</b> An interactive version of the prototype is created with functional buttons and mock data, allowing users to experience a closer version of the final app.</li>
+      <li><b>Refinement:</b> Based on feedback, developers modify layouts, colors, and features, gradually bringing the app closer to the end product that meets user needs.</li>
+    </ul>
+    
+  
+   
+</div>
+    
+    <button class="collapsible">11.2.2.1 analyze the advantages of new system <br>11.2.2.2 analyze the restrictions of new system  </button>
+<div class="content">
+  <p><b>11.2.2.1 analyze the advantages of new system  </b></p>
+     <p>An exam question might ask: "A school introduces a new online grading system for students and teachers. Describe the advantages of this new system."</p>
+    <h3>Advantages of the New System:</h3>
+    <ul>
+      <li><b>Increased Accessibility:</b> Teachers and students can access the system from anywhere, improving communication and accessibility to grades.</li>
+      <li><b>Enhanced Efficiency:</b> Automated calculations and grade inputs save teachers’ time and reduce errors associated with manual entry.</li>
+      <li><b>Data Security:</b> Digital records reduce the chance of physical records being lost or damaged, enhancing data security and integrity.</li>
+      <li><b>Real-time Feedback:</b> Students receive real-time updates on their grades, which encourages continuous improvement and engagement.</li>
+    </ul>
+     <p><b> 11.2.2.2 analyze the restrictions of new system  </b></p>
+    <p>Consider a similar task: "A hospital introduces a new patient management system. Analyze the restrictions this new system may face."</p>
+    <h3>Restrictions of the New System:</h3>
+    <ul>
+      <li><b>Initial Cost:</b> Implementing a system can be expensive, including the software purchase, hardware upgrades, and staff training.</li>
+      <li><b>Learning Curve:</b> Staff need time to adapt to new technology, which can temporarily slow operations.</li>
+      <li><b>Technical Limitations:</b> If hardware doesn’t meet the system requirements, performance may suffer, leading to delays or data processing issues.</li>
+      <li><b>Data Privacy Concerns:</b> Systems handling sensitive information need strict security measures, which can be challenging to implement fully.</li>
+    </ul>
+</div>
+     <button class="collapsible">11.2.2.3 describe the characteristics of a development framework <br>11.2.2.7 define minimum requirements for hardware when implementing <br>11.3.1.5 justify their choice of applied software and choice criteria based on the goals  
+ </button>
+<div class="content">
+    <p><b>11.2.2.3 describe the characteristics of a development framework<br></b></p> 
+     <p>A development framework provides the structure and tools necessary for developing software. GCSE tasks might ask, "Explain the role of a development framework in software projects."</p>
+    <h3>Key Characteristics of Development Frameworks:</h3>
+    <p>Development frameworks include libraries, tools, and best practices that simplify and standardize coding.</p>
+    <ul>
+      <li><b>Modularity:</b> Frameworks support modular design, where code is organized in reusable components, aiding collaboration and consistency.</li>
+      <li><b>Code Libraries:</b> Provide ready-to-use code modules, speeding up development for common features (e.g., login systems).</li>
+      <li><b>Integrated Development Environment (IDE) Support:</b> Often integrated with popular IDEs, frameworks improve developer productivity through tools for debugging, testing, and code completion.</li>
+    </ul>
+    <h3>Examples of Development Frameworks:</h3>
+    <ul>
+      <li><b>React (JavaScript):</b> Used for building user interfaces, especially single-page applications (SPAs).</li>
+      <li><b>Spring (Java):</b> Commonly used for enterprise-level backend applications.</li>
+      <li><b>Django (Python):</b> Popular for web applications due to its simplicity and quick development cycle.</li>
+    </ul>
+    <p><b>11.2.2.7 define minimum requirements for hardware when implementing<br></b></p> 
+     <h3>Minimum Hardware Requirements:</h3>
+    <p>When implementing a new system, it’s essential to ensure the hardware meets the minimum requirements to support the software efficiently. Typical hardware considerations include:</p>
+    <ul>
+      <li><b>Processor:</b> A multi-core processor is recommended for handling complex tasks smoothly.</li>
+      <li><b>Memory (RAM):</b> Adequate memory is essential to support multitasking and resource-demanding applications; generally, 8GB or more is suggested.</li>
+      <li><b>Storage:</b> Solid State Drives (SSD) provide faster access to data compared to traditional HDDs, and at least 256GB is commonly required for system responsiveness.</li>
+      <li><b>Graphics Card:</b> For systems handling graphic-intensive tasks, a dedicated graphics card is necessary to ensure high-quality visual output and processing power.</li>
+    </ul>
+    <p><b>11.3.1.5 justify their choice of applied software and choice criteria based on the goals  <br></b></p> 
+       <p>Example  question: "Your school needs software to create presentations and manage documents. Justify your choice of software based on the goals."</p>
+    <h3>Criteria for Choosing Applied Software:</h3>
+    <ul>
+      <li><b>Compatibility:</b> The software should work seamlessly with existing systems and file formats (e.g., Microsoft Office for document and presentation needs).</li>
+      <li><b>User-Friendliness:</b> Software should be easy for all users to operate without extensive training (e.g., Google Docs for collaborative editing).</li>
+      <li><b>Cost-Efficiency:</b> Budget considerations are essential; schools may opt for open-source or cost-effective solutions (e.g., LibreOffice as a free alternative).</li>
+      <li><b>Security and Privacy:</b> The software must protect sensitive data, especially in educational environments (e.g., cloud-based software with data encryption).</li>
+    </ul>
+    <p>In this example, schools may choose Microsoft Office for its widespread use, compatibility, and rich features, justifying it as a reliable option for both educators and students.</p>
+ 
+ 
+</div>
+ 
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    
+    </section>
+         
+
+    
+    </body>
+</html>
+

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="with=device-width", initial-scale="1.0">
+    <title> project </title>
+    <link rel="stylesheet" href="style.css">
+                                           <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+    .codes {4
+    font-style: italic;
+    color: cornflowerblue;
+    }
+</style>
+                                                                                                                        </head>
+<body>
+    <section class="none1">
+        <nav>
+            <div class="nav-links111">
+              
+                
+                <ul> <li><a href="head%20page.html">HOME</a></li>
+                    <li><a href="all-about.html">ABOUT</a></li>
+                    <li><a href="terms.html">LESSONS</a></li>
+                    <li><a href="">PRACTICE</a></li>
+                    <li><a href="">TIPS</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </section>
+<section class="term1">
+  <h1 style="text-align: center; padding: 35px; font-size: 35px; color: black;">Term 3</h1>  
+<button class="collapsible">11.5.2.1 determine data structure of a one-dimensional array <br> 11.5.2.2 determine data structure of a two-dimensional array  </button>
+<div class="content">
+    <br>
+  <p> <b>11.5.2.1 determine data structure of a one-dimensional array  </b></p><br>
+    <p><b>One-Dimensional Array:</b></p>
+    <p>A one-dimensional array is a simple data structure consisting of a single row of elements of the same data type stored in contiguous memory locations. It can be visualized as a linear sequence and is commonly used for lists of items. Each element is accessed by an index, with the first element starting at index 0.</p>
+        <section class="codes"> <p><b>Example:</b>
+   
+            <code>int num [] = new int [10] <br>array = [5, 10, 15, 20, 25]</code></p></section>
+<br><br>
+   
+<br>
+    <p><b>11.5.2.2 determine data structure of a two-dimensional array </b></p><br>
+     <p><b>Two-Dimensional Array:</b></p>
+    <p>A two-dimensional array is an array of arrays, often visualized as a table with rows and columns. Each element is accessed by two indices, representing the row and column. This data structure is commonly used for matrix or grid-based data representation.</p>
+    
+    <p><b>Declaration:</b></p>
+    <p>In most programming languages, a two-dimensional array is declared with a specified number of rows and columns. For example, in Python, you can create a 3x3 array as shown below:</p>
+         <section class="codes">
+    <pre>
+array = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+    </pre>
+    </section>
+    <p><b>Accessing Elements:</b></p>
+    <p>Each element in a two-dimensional array is accessed by providing the row and column indices. For example, to access the element at the second row and third column:</p>
+         <section class="codes">
+    <pre>
+element = array[1][2]  # Output will be 6
+    </pre>
+    </section>
+    <p><b>Nested Loops:</b></p>
+    <p>Nested loops are commonly used to iterate over two-dimensional arrays. A loop is created to go through each row, and inside it, another loop goes through each column. This is essential for tasks like summing all elements, finding maximum/minimum values, or applying operations to each cell.</p>
+    <p><b>Example of Nested Loop:</b></p>
+         <section class="codes">
+    <pre>
+# Iterate through each element in a 2D array
+for i in range(len(array)):         # Loop through rows
+    for j in range(len(array[i])):   # Loop through columns
+        print(array[i][j], end=" ")
+    print()  # Newline for each row
+    </pre>
+    </section>
+<br>
+    <p><b> 11.5.2.3 apply basic algorithms (input, output, insert, delete) to one-dimensional arrays </b></p><br>
+    <ul>
+      <li><b>Input:</b> Adding elements to an array. Example: <code>array[i] = value</code></li>
+      <li><b>Output:</b> Printing elements. Example: <code>for i in array: print(i)</code></li>
+      <li><b>Insert:</b> Adding an element at a specific position. Example: <code>array.insert(2, value)</code></li>
+      <li><b>Delete:</b> Removing an element. Example: <code>del array[2]</code></li>
+    </ul>
+</div>
+    
+    
+    
+<button class="collapsible">11.5.2.4 write a pseudo-code for sorting by insert and bubble<br> 11.5.2.5 write a pseudo-code of binary search for the solution of a specific problem  </button>
+
+    <div class="content">
+  <br> <b><p>11.5.2.4 write a pseudo-code for sorting by insert and bubble</p> </b><br>
+<p><b>Definition:</b> Insertion Sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much like the way we sort playing cards in our hands.</p>
+    <p>This algorithm takes each element from the unsorted portion of the array and "inserts" it into its correct position in the sorted portion. It starts with the second element, compares it to the previous elements, and shifts larger elements one position to the right to make room for the insertion.</p>
+    <p><b>Insertion Sort Pseudo-Code:</b></p>
+        <section class="codes">
+    <pre>
+for i = 1 to length(array) - 1
+    key = array[i]
+    j = i - 1
+    while j >= 0 and array[j] > key
+        array[j + 1] = array[j]
+        j = j - 1
+    array[j + 1] = key
+    </pre>
+        </section>
+ 
+         <p><b>Definition:</b> Bubble Sort is a basic comparison-based algorithm where adjacent elements are compared and swapped to bring the largest elements to the end.</p>
+    <p> It works by repeatedly stepping through the list, comparing adjacent pairs, and swapping them if they are in the wrong order. Each pass through the array places the next largest element in its correct position, "bubbling" it up to the end of the list.</p>
+    <p><b>Bubble Sort Pseudo-Code:</b></p>
+        <section class="codes">
+    <pre>
+for i = 0 to length(array) - 1
+    for j = 0 to length(array) - i - 1
+        if array[j] > array[j + 1]
+            swap(array[j], array[j + 1])
+    </pre>
+        </section>
+        <br> <b><p> 11.5.2.5 write a pseudo-code of binary search for the solution of a specific problem </p> </b><br>
+         <p><b>Definition:</b> Binary Search is a highly efficient algorithm for finding a target value within a sorted array. It repeatedly divides the search interval in half.</p>
+    <p> This algorithm starts by comparing the target value to the middle element of the array. If the target is smaller, it narrows the interval to the left half; if larger, to the right half. It continues this process until the target is found or the interval is empty.</p>
+    <p><b>Binary Search Pseudo-Code:</b></p>
+        <section class="codes">
+    <pre>
+function binarySearch(array, target)
+    left = 0
+    right = length(array) - 1
+    while left <= right
+        mid = (left + right) / 2
+        if array[mid] == target
+            return mid
+        else if array[mid] < target
+            left = mid + 1
+        else
+            right = mid - 1
+    return -1
+    </pre>
+        </section>
+        
+         <p><b>Definition:</b> Linear Search is a straightforward algorithm that sequentially checks each element of the list until the target value is found or the list ends.</p>
+    <p> Linear Search starts at the beginning of the list, comparing each element with the target value one by one. It stops once it finds the target or reaches the end of the list. This algorithm works for both sorted and unsorted lists but can be less efficient for large lists, as it may require checking every element.</p>
+    <p><b>Linear Search Pseudo-Code:</b></p>
+        <section class="codes">
+    <pre>
+function linearSearch(array, target)
+    for i = 0 to length(array) - 1
+        if array[i] == target
+            return i
+    return -1
+    </pre>
+        </section>
+      
+</div>
+    
+    <button class="collapsible">11.5.2.6 understand the temporal efficiency of algorithms<br> 11.5.2.7 to understand the spatial efficiency of algorithms </button>
+    
+<div class="content">
+    <br> <b><p>11.5.2.6 understand the temporal efficiency of algorithms </p> </b><br> 
+    <p>Temporal efficiency, also known as time complexity, refers to the runtime of an algorithm in relation to its input size. It indicates how the time to complete a task grows with larger inputs.</p>
+    <p><b>Description:</b> Temporal efficiency is analyzed using Big O notation, which classifies algorithms based on their growth rate. For example, an O(n) time complexity means the time grows linearly with the input size.</p>
+    <ul>
+      <li><b>O(1):</b> Constant time, e.g., accessing an element in an array.</li>
+      <li><b>O(log n):</b> Logarithmic time, e.g., binary search.</li>
+      <li><b>O(n):</b> Linear time, e.g., linear search.</li>
+      <li><b>O(n^2):</b> Quadratic time, e.g., bubble sort.</li>
+    </ul>
+ 
+ <br> <b><p> 11.5.2.7 to understand the spatial efficiency of algorithms </p> </b><br> 
+  
+    <p><b>Definition:</b> Spatial efficiency, or space complexity, measures the amount of memory an algorithm requires relative to its input size. </p>
+    <p> Efficient algorithms aim to minimize memory usage and avoid redundancy. Space complexity is often represented using Big O notation, with O(1) indicating constant memory usage regardless of input size, while O(n) grows linearly with input size.</p>
+ </div>
+    
+    <button class="collapsible">11.5.3.1 create a site using basic HTML tags  <br>11.5.3.2 create forms for data entry using HTML tags </button>
+  <div class="content">
+    <p><b>11.5.3.1 create a site using basic HTML tags</b><br>
+
+    <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages. HTML describes the structure of web pages using markup, and it consists of elements represented by tags.</p>
+
+    <p><b>Basic HTML Structure:</b> All HTML pages follow a basic structure with main sections, including the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> tags:</p>
+      <section class="codes">
+     <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Basic HTML Site&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph with some text.&lt;/p&gt;
+    &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+      </section>
+    <p><b>HTML Tag Types:</b></p>
+    <ul>
+      <li><b>Block-Level Tags:</b> Define sections of the page that occupy space and are stacked vertically (e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>).</li>
+      <li><b>Inline Tags:</b> Do not occupy separate lines and can appear within block elements (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).</li>
+    </ul>
+
+    <p><b>Creating Layouts with Tables:</b> Using tables for layout allows content to be arranged in rows and columns. Although not the preferred method for modern layouts, it is sometimes used for specific tabular data.</p>
+     <section class="codes">
+      <pre><code>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Content 1&lt;/td&gt;
+    &lt;td&gt;Content 2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Content 3&lt;/td&gt;
+    &lt;td&gt;Content 4&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+      </section>
+    <p>This approach is best for displaying structured, tabular data but is less flexible for responsive web design.</p>
+
+    <p><b>Creating Layouts with &lt;div&gt; Elements:</b> The <code>&lt;div&gt;</code> tag is a block-level container used for grouping elements and applying CSS for layout purposes. This approach is more flexible and works well with CSS for creating modern, responsive layouts.</p>
+      <section class="codes">
+    <pre><code>
+&lt;div class="container"&gt;
+  &lt;div class="header"&gt;Header Section&lt;/div&gt;
+  &lt;div class="content"&gt;Content Section&lt;/div&gt;
+  &lt;div class="footer"&gt;Footer Section&lt;/div&gt;
+&lt;/div&gt;
+
+   </code> </pre>
+      </section>
+    <p><b>CSS for Layout with &lt;div&gt;:</b> CSS can be used to style and position these <code>&lt;div&gt;</code> elements, providing layout control for responsive design.</p>
+      <section class="codes">
+    <p>&lt;style&gt;
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header, .content, .footer {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.header {
+  background-color: #f8f8f8;
+}
+
+.content {
+  background-color: #e8e8e8;
+}
+
+.footer {
+  background-color: #d8d8d8;
+}
+&lt;/style&gt;
+
+    </p>
+      </section>
+    <p>This approach is ideal for creating flexible layouts compatible with mobile and desktop views, enabling responsive web design.</p>
+ 
+
+           <p><b>11.5.3.2 create forms for data entry using HTML tags </b><br>
+    <p><b>Creating Forms:</b> HTML forms allow users to input and submit data. They are crucial for interactive websites, allowing data to be sent to a server for processing.</p>
+    <p><b>Form Elements:</b></p>
+    <ul>
+      <li><code>&lt;form&gt;</code>: The container for form inputs, with attributes like <code>action</code> and <code>method</code>.</li>
+      <li><code>&lt;input&gt;</code>: Provides various types of data entry fields (e.g., text, email, password).</li>
+      <li><code>&lt;label&gt;</code>: Describes inputs, improving accessibility.</li>
+      <li><code>&lt;button&gt;</code>: Submits the form data.</li>
+    </ul>
+      <section class="codes">
+    <pre><code>
+&lt;form action="/submit_form" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+  </code>  </pre>
+      </section>
+      
+  </div>
+
+    <button class="collapsible">11.5.3.3 use the CSS stylesheet when creating a site  </button>
+<div class="content">
+    
+    <p><b>11.5.3.3 use the CSS stylesheet when creating a site </b> </p>
+    <p><b>Using CSS Styles:</b> CSS (Cascading Style Sheets) is used to style HTML elements, controlling colors, fonts, layout, and more. CSS can be applied in three main ways: external, internal, and inline.</p>
+
+    <!-- External CSS -->
+    <p><b>1. External CSS:</b> An external CSS file is a separate file (e.g., <code>styles.css</code>) that contains all the CSS styles for the site. This file is linked in the <code>&lt;head&gt;</code> section of the HTML document, making it easy to apply consistent styles across multiple pages.</p>
+    <section class="codes">
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt; &lt;!-- Link to external CSS file --&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 class="header"&gt;Styled Website&lt;/h1&gt;
+    &lt;p class="content"&gt;This paragraph is styled using CSS.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+ </code> 
+/* External styles for the website */
+.header {
+  color: blue;
+  font-size: 24px;
+}
+
+.content {
+  color: gray;
+  font-size: 18px;
+}
+    </pre>
+    </section>
+
+    <!-- Internal CSS -->
+    <p><b>2. Internal CSS:</b> Internal CSS is placed within the <code>&lt;style&gt;</code> tags inside the <code>&lt;head&gt;</code> section of the HTML document. This approach is useful for styling a single HTML page without affecting others.</p>
+    <section class="codes">
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      .header {
+        color: green;
+        font-size: 24px;
+      }
+
+      .content {
+        color: gray;
+        font-size: 18px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 class="header"&gt;Internal CSS Example&lt;/h1&gt;
+    &lt;p class="content"&gt;This paragraph is styled using internal CSS.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    </section>
+    <!-- Inline CSS -->
+    <p><b>3. Inline CSS:</b> Inline CSS is applied directly to an individual HTML element using the <code>style</code> attribute. This method is best for applying a unique style to a single element rather than the entire page or multiple elements.</p>
+   <section class="codes">
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1 style="color: red; font-size: 24px;"&gt;Inline CSS Example&lt;/h1&gt;
+    &lt;p style="color: gray; font-size: 18px;"&gt;This paragraph is styled using inline CSS.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    </section>
+    <p>Each type of CSS application has its own use case:</p>
+    <ul>
+      <li><b>External CSS</b> keeps styles separate from HTML, making it easy to manage and reuse across multiple pages.</li>
+      <li><b>Internal CSS</b> is useful when styles are only needed for a specific page.</li>
+      <li><b>Inline CSS</b> is convenient for quick styling but should be avoided for large projects to maintain clean, maintainable code.</li>
+    </ul>
+  <a href="https://www.w3schools.com/css/default.asp" style="font-size: 15px">learn more here</a>
+</div>
+    
+     <button class="collapsible">11.5.3.4 use script language to connect a database <br> 11.5.3.5 use script to work with databases   
+ </button>
+<div class="content">
+    <p><b>11.2.2.3 describe the characteristics of a development framework<br></b></p> 
+     <p>Web pages are documents that are viewed in a browser.
+Web pages can be either static or dynamic
+A static website has no form of interactivity. It only uses HTML and CSS and there are no options for the user to input data.
+Dynamic websites contain elements that allow the user to interact with the site. 
+</p>
+    <p><b>A client-side script</b> is a program that is processed within the client browser.<b> JavaScript </b>is a client-side scripting language
+</p>
+    
+    <p><b>A server-side script</b> is processed on the web server when the user requests information.<b> Php </b>is a server side scripting language.
+</p>
+   <p> PHP (Hypertext Preprocessor) is a popular server-side scripting language used to build dynamic web pages and applications. It is embedded within HTML and executed on the server, allowing developers to interact with databases, process forms, and manage sessions.</p>
+    
+    <h3>PHP Variables</h3>
+    <p>Variables in PHP store data values and are defined with the <code>$</code> symbol. PHP variables are case-sensitive, start with a letter or underscore, and do not require type declarations.</p>
+    <section class="codes"><pre>
+&lt;?php
+$greeting = "Hello, World!";
+$number = 42;
+echo $greeting; // Output: Hello, World!
+?&gt;
+    </pre></section>
+
+    <h3>PHP Constants</h3>
+    <p>Constants are immutable values in PHP that remain the same throughout the script. They are defined using the <code>define()</code> function and are typically written in uppercase.</p>
+  <section class="codes">   <pre>
+&lt;?php
+define("SITE_NAME", "My Website");
+echo SITE_NAME; // Output: My Website
+?&gt;
+    </pre></section>
+  
+
+ 
+    <p><b>GET Method:</b> The GET method sends data through the URL, allowing form data to be retrieved by the server. This method is typically used for retrieving (not modifying) information.</p>
+    <p><b>Example:</b> Accessing form data with PHP’s <code>$_GET</code> superglobal:</p>
+   <section class="codes">  <pre>
+&lt;form action="process.php" method="GET"&gt;
+  &lt;label&gt;Name: &lt;/label&gt;
+  &lt;input type="text" name="name"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+    </pre></section>
+
+  <section class="codes">   <pre>
+// process.php
+&lt;?php
+$name = $_GET['name'];
+echo "Hello, " . $name;
+?&gt;
+    </pre></section>
+    <p>Accessing this page with a form submission like <code>localhost/process.php?name=John</code> would output: <i>Hello, John</i>.</p>
+
+    <p><b>POST Method:</b> The POST method sends data as part of the request body rather than the URL, making it more secure for transmitting sensitive information. POST is commonly used for form submissions.</p>
+    <p><b>Example:</b> Accessing form data with PHP’s <code>$_POST</code> superglobal:</p>
+    <section class="codes"> <pre>
+&lt;form action="submit.php" method="POST"&gt;
+  &lt;label&gt;Email: &lt;/label&gt;
+  &lt;input type="email" name="email"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+    </pre></section>
+
+ <section class="codes">    <pre>
+// submit.php
+&lt;?php
+$email = $_POST['email'];
+echo "Your email is: " . $email;
+?&gt;
+    </pre></section>
+    <p>This method keeps the submitted data out of the URL, making it safer for sensitive data.</p>
+  
+    <p><b>SESSION Method:</b> PHP sessions are used to store user-specific data across multiple pages. Unlike cookies, session data is stored on the server, which enhances security.</p>
+    <p><b>Example:</b> Starting a session and setting session variables with PHP’s <code>$_SESSION</code> superglobal:</p>
+    <section class="codes"> <pre>
+// Start the session
+&lt;?php
+session_start();
+$_SESSION['username'] = "JohnDoe";
+echo "Session set for user: " . $_SESSION['username'];
+?&gt;
+    </pre></section>
+
+    <p><b>Accessing Session Data on Another Page:</b></p>
+   <section class="codes">  <pre>
+// anotherpage.php
+&lt;?php
+session_start();
+echo "Welcome back, " . $_SESSION['username'];
+?&gt;
+    </pre></section>
+    <p>Sessions remain active until the user closes the browser or the session is manually destroyed using <code>session_destroy()</code>.</p>
+
+    <h3>Steps to Set Up and Execute PHP Code Locally:</h3>
+    <ol>
+      <li><b>Install a Local Server Environment:</b> Download and install a tool like XAMPP or WAMP, which includes Apache (web server), MySQL (database), and PHP.</li>
+      <li><b>Start Apache and MySQL:</b> Open the XAMPP or WAMP control panel and start both the Apache and MySQL services.</li>
+      <li><b>Save PHP Files in the Web Directory:</b> Place your HTML/PHP files in the <code>C:\xampp\htdocs</code> folder (or <code>www</code> folder for WAMP) so the server can access them.</li>
+      <li><b>Access PHP Files in the Browser:</b> Open a web browser and type <code>localhost/filename.php</code> in the address bar, replacing <code>filename.php</code> with your actual file name.</li>
+    </ol>
+    <p>Following these steps allows you to test and develop PHP scripts on your local machine.</p><br> 
+ <h3>Examples</h3> 
+    <h4>Registration page</h4>
+  <i>
+    <section class="codes"> &lt;form action="register.php" method="POST"&gt;
+  <br> <br>     &lt;label for="username"&gt;Username:&lt;/label&gt;
+  <br>     &lt;input type="text" id="username" name="username" required&gt;&lt;br&gt;&lt;br&gt;
+  <br>     &lt;label for="email"&gt;Email:&lt;/label&gt;
+  <br>     &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+ <br>      &lt;label for="password"&gt;Password:&lt;/label&gt;
+  <br>     &lt;input type="password" id="password" name="password" required&gt;&lt;br&gt;&lt;br&gt;
+    <br>   &lt;input type="submit" value="Register"&gt;
+ <br>    &lt;/form&gt;
+ <br> </section></i>
+<h4>PHP code:</h4><i>
+ <section class="codes"> <!-- PHP Code for Registration (register.php) -->
+ &lt;?php<br>
+<br>   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+ <br>    $servername = "localhost";
+  <br>   $username = "root";
+  <br>   $password = "";
+  <br>   $dbname = "mydatabase";
+  <br>   
+  <br>   // Create connection
+  <br>   $conn = new mysqli($servername, $username, $password, $dbname);
+  <br>   
+  <br>   // Check connection
+   <br>  if ($conn->connect_error) {
+ <br>      die("Connection failed: " . $conn->connect_error);
+ <br>    }
+ <br>    
+ <br>    $user = $_POST['username'];
+ <br>    $email = $_POST['email'];
+  <br>   $pass = password_hash($_POST['password'], PASSWORD_DEFAULT);
+  <br>   
+  <br>   // SQL query to insert data
+ <br>    $sql = "INSERT INTO users (username, email, password) VALUES ('$user', '$email', '$pass')";
+ <br>    
+ <br>    if ($conn->query($sql) === TRUE) {
+ <br>      echo "New record created successfully";
+ <br>    } else {
+ <br>      echo "Error: " . $sql . "&lt;br&gt;" . $conn->error;
+ <br>    }
+  <br>   
+ <br>    $conn->close();
+ <br>  }
+<br> ?&gt;
+<br> 
+    </section></i>
+<!-- JS for form validation --><h4>JS code:</h4><i>
+  <section class="codes">
+      &lt;script&gt;
+ <br>  document.querySelector('form').onsubmit = function() {
+  <br> <br>   let password = document.getElementById('password').value;
+  <br>   if (password.length &lt; 6) {
+   <br>    alert("Password must be at least 6 characters long.");
+   <br>    return false;
+   <br>  }
+  <br> <br>   return true;
+  <br> };
+   <br>  &lt;/script&gt;
+<br> 
+    </section></i>
+     <h4>Login page</h4>
+   <section class="codes"><i>
+   <br> &lt;form action="login.php" method="POST"&gt;
+   <br>    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    <br>   &lt;input type="text" id="username" name="username" required&gt;&lt;br&gt;&lt;br&gt;
+     <br>  &lt;label for="password"&gt;Password:&lt;/label&gt;
+     <br>  &lt;input type="password" id="password" name="password" required&gt;&lt;br&gt;&lt;br&gt;
+     <br>  &lt;input type="submit" value="Login"&gt;
+   <br>  &lt;/form&gt;</i>
+  <br> 
+       </section>
+<h3>PHP code:</h3>
+        <section class="codes">
+<i>
+<br> &lt;?php
+ <br>  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  <br>   $servername = "localhost";
+  <br>   $username = "root";
+   <br>  $password = "";
+   <br> <br>  $dbname = "mydatabase";
+    <br> 
+  <br>   // Create connection
+   <br>  $conn = new mysqli($servername, $username, $password, $dbname);
+   <br>  
+  <br>   // Check connection
+  <br>   if ($conn->connect_error) {
+  <br>     die("Connection failed: " . $conn->connect_error);
+  <br>   }
+   <br>  
+  <br>   $user = $_POST['username'];
+  <br>   $pass = $_POST['password'];
+   <br>  
+  <br>   // SQL query to fetch user data
+ <br>    $sql = "SELECT * FROM users WHERE username = '$user'";
+ <br>    $result = $conn->query($sql);
+  <br>   
+  <br>   if ($result->num_rows &gt; 0) {
+  <br>     $row = $result->fetch_assoc();
+ <br>      
+  <br>     // Verify password
+   <br>    if (password_verify($pass, $row['password'])) {
+  <br>       echo "Login successful!";
+   <br>    } else {
+   <br>      echo "Invalid password!";
+   <br>    }
+  <br>   } else {
+  <br>     echo "No user found!";
+  <br>   }
+  <br>   
+  <br>   $conn->close();
+ <br>  }
+<br> ?&gt;
+</i>
+            </section>
+</div>
+    
+    <button class="collapsible">11.5.3.6 use various algorithmic structures in script language <br>11.5.3.7 use script language in site design <br>11.5.3.8 use script language to provide interactivity   </button>
+<div class="content">
+  
+    <p>JavaScript is a programming language primarily used to create dynamic and interactive content on websites. As a client-side language, it enables developers to build responsive features directly within the browser, like validating forms, manipulating HTML elements, and handling user events. JavaScript can also be used server-side (e.g., with Node.js) to interact with databases and perform backend functions.</p>
+  
+    <p><b>JavaScript Objects:</b></p>
+    <p>In JavaScript, objects are collections of related data and functions, represented as key-value pairs. Objects allow you to store and organize complex data and are widely used for creating structured data and handling it easily.</p>
+        <section class="codes">
+    <pre><i>
+let person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+console.log(person.fullName()); // Output: John Doe</i>
+    </pre></section>
+    <p>In this example, the <code>person</code> object has properties like <code>firstName</code> and <code>age</code>, and a method <code>fullName()</code> that returns the person's full name.</p>
+ 
+
+ 
+    <p><b>JavaScript Variables:</b></p>
+    <p>Variables store data values that can be referenced and manipulated in a program. JavaScript supports <code>let</code>, <code>const</code>, and <code>var</code> keywords for variable declaration:</p>
+    <ul>
+      <li><code>let</code>: Block-scoped variable, commonly used for variables that may change.</li>
+      <li><code>const</code>: Block-scoped constant, used for values that should not change after being set.</li>
+      <li><code>var</code>: Function-scoped variable, historically used before <code>let</code> and <code>const</code> were introduced.</li>
+    </ul>
+        <section class="codes">
+    <pre><i>
+let name = "Alice";
+const age = 30;
+var city = "New York";
+   </i> </pre>
+    </section>
+
+    <p><b>Basic Syntax Principles:</b></p>
+    <p>JavaScript syntax includes simple statements, expressions, and keywords. Common syntax elements include:</p>
+    <ul>
+      <li><b>Statements:</b> Instructions that perform actions, ending with a semicolon.</li>
+      <li><b>Comments:</b> Use <code>//</code> for single-line comments and <code>/* ... */</code> for multi-line comments.</li>
+      <li><b>Functions:</b> Reusable blocks of code that can be called by name.</li>
+    </ul>
+         <section class="codes">
+    <pre><i>
+    
+// This is a single-line comment
+
+/* This is a
+multi-line comment */
+
+function greet() {
+  console.log("Hello, world!");
+}
+greet();
+   </i> </pre>
+    </section>
+    <p><b>HTML DOM (Document Object Model):</b> JavaScript interacts with the HTML DOM to dynamically change content, styles, and structure of a webpage. The DOM represents the structure of the HTML document, allowing JavaScript to manipulate elements by accessing their properties and methods.</p>
+
+    <h3>DOM Elements</h3>
+    <p>You can select and modify HTML elements using JavaScript. For example:</p>
+         <section class="codes">
+    <pre>
+document.getElementById("myElement").innerHTML = "New Content"; // Change content
+document.getElementsByClassName("myClass")[0].style.color = "red"; // Change style
+    </pre>
+    </section>
+    <h3>Changing CSS with JavaScript</h3>
+    <p>JavaScript can change CSS styles of elements directly:</p>
+         <section class="codes">
+    <pre>
+document.getElementById("header").style.backgroundColor = "lightblue";
+    </pre>
+    </section>
+    <h3>Basic Animation with JavaScript</h3>
+    <p>JavaScript can create animations by modifying element properties over time, using functions like <code>setInterval</code> or <code>requestAnimationFrame</code>:</p><br>
+         <section class="codes">
+    <pre><code><i>
+let pos = 0;
+let box = document.getElementById("box");
+
+function move() {
+  pos += 1;
+  box.style.left = pos + "px";
+  if (pos = 300) {
+    requestAnimationFrame(move);
+  }
+}
+
+move(); // Start the animation
+   </i> </code></pre></section>
+    <p>In this <b> example,</b> the <code>move()</code> function changes the <code>left</code> position of an element with id <code>box</code>, creating a simple animation.
+    </p>
+
+
+    
+</div>
+  <button class="collapsible">11.2.2.3 describe the characteristics of a development framework   </button>
+<div class="content">
+    <h3>11.2.2.3 Describe the Characteristics of a Development Framework</h3>
+    <table border="1">
+      <tr>
+        <th>Characteristic</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Reusability</td>
+        <td>A development framework allows developers to reuse code components, which speeds up development time and ensures consistency across applications.</td>
+      </tr>
+      <tr>
+        <td>Modularity</td>
+        <td>Frameworks encourage modular programming, where components can be easily reused and tested independently.</td>
+      </tr>
+      <tr>
+        <td>Scalability</td>
+        <td>Frameworks are designed to handle the scaling needs of large applications. They provide tools for managing resources and performance efficiently.</td>
+      </tr>
+      <tr>
+        <td>Security</td>
+        <td>Many frameworks come with built-in security features, such as authentication and authorization, to help developers protect their applications.</td>
+      </tr>
+      <tr>
+        <td>Cross-Platform Support</td>
+        <td>Frameworks like React Native and Flutter provide tools to write cross-platform applications, saving development time and resources.</td>
+      </tr>
+    </table>
+    </div>
+<button class="collapsible">11.5.4.1 create a mobile application interface using the components of an application designer <br> 11.5.4.2 edit properties of components in a program code <br>  11.5.4.3 create an application for mobile devices using conditional operators<br>  11.5.4.4 create an application for mobile devices using loop structures  </button>
+<div class="content">
+    <h3>11.5.4.1 Create a Mobile Application Interface Using the Components of an Application Designere</h3>
+    <p>In React Native, you can use several components to create mobile applications. Here is an example:</p>
+     <section class="codes">
+    <pre>
+      &lt;View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}&gt;
+        &lt;Text style={{ fontSize: 20, color: 'blue' }}&gt;Welcome to React Native!&lt;/Text&gt;
+        &lt;Image source={{uri: 'https://example.com/image.png'}} style={{width: 100, height: 100}} /&gt;
+      &lt;/View&gt;
+    </pre>
+    </section>
+    <h4>Components used:</h4>
+    <ul>
+      <li><b>Text:</b> Displays text content on the screen.</li>
+      <li><b>View:</b> A container that allows you to arrange child components.</li>
+      <li><b>Image:</b> Displays images in the application.</li>
+      <li><b>Flex:</b> A layout model to build flexible and responsive designs.</li>
+      <li><b>FlexDirection:</b> Defines the direction of the flex items.</li>
+    </ul>
+  
+    <h3>11.5.4.2 Edit Properties of Components in Program Code</h3>
+    <p>React Native provides several methods to edit the properties of components programmatically:</p>
+     <section class="codes">
+    <pre>
+      &lt;View style={{flex: 1, flexDirection: 'row'}}&gt;
+        &lt;Text style={{alignSelf: 'center'}}&gt;Centered Text&lt;/Text&gt;
+        &lt;ScrollView&gt;
+          &lt;Text&gt;Scrollable Content&lt;/Text&gt;
+        &lt;/ScrollView&gt;
+      &lt;/View&gt;
+    </pre>
+    </section>
+    <p>Some key features:</p>
+    <ul>
+      <li><b>Flexbox:</b> Used for layout, arranging elements in rows or columns.</li>
+      <li><b>ScrollView:</b> Enables scrollable content, particularly useful for long lists.</li>
+      <li><b>ListView:</b> A component to display lists of items.</li>
+      <li><b>Checkbox:</b> Allows the user to select a true/false value.</li>
+    </ul>
+    <h4>React Navigation Types:</h4>
+  
+    <table border="1">
+      <tr>
+        <th>Navigation Type</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Drawer Navigation</td>
+        <td>A slide-out menu that allows users to navigate between screens.</td>
+      </tr>
+      <tr>
+        <td>Tab Navigator</td>
+        <td>Allows users to switch between views using tabs.</td>
+      </tr>
+      <tr>
+        <td>Switch Screen</td>
+        <td>Used to toggle between different screens or states in an app.</td>
+      </tr>
+    </table>
+  
+
+
+    <h3>11.5.4.3 Create an Application for Mobile Devices Using Conditional Operators</h3>
+    <p>React Native allows you to conditionally render components based on logic. Here's an example using an if/else operator:</p>
+     <section class="codes">
+    <pre>
+      &lt;View&gt;
+        &lt;Text&gt;Enter your age:&lt;/Text&gt;
+        &lt;TextInput
+          style={{borderWidth: 1, marginBottom: 10}}
+          onChangeText={setAge}
+        /&gt;
+        &lt;Button
+          title="Submit"
+          onPress={() =&gt; {
+            if (age &gt;= 18) {
+              Alert.alert('You are an adult');
+            } else {
+              Alert.alert('You are a minor');
+            }
+          }}
+        /&gt;
+      &lt;/View&gt;
+    </pre>
+    </section>
+    <p>This app checks if the user is an adult or a minor based on their age input.</p>
+  
+
+
+    <h3>11.5.4.4 Create an Application for Mobile Devices Using Loop Structures</h3>
+    <p>React Native allows developers to use loops in their code. Here are three examples using different loop structures:</p>
+    <h4>For Loop:</h4>
+    <section class="codes">
+    <pre>
+      let items = [];
+      for (let i = 0; i &lt; 5; i++) {
+        items.push(&lt;Text key={i}&gt;Item {i}&lt;/Text&gt;);
+      }
+      &lt;View&gt; {items} &lt;/View&gt;
+    </pre>  
+    </section>
+    <h4>While Loop:</h4>
+     <section class="codes">
+    <pre>
+      let i = 0;
+      let items = [];
+      while (i &lt; 5) {
+        items.push(&lt;Text key={i}&gt;Item {i}&lt;/Text&gt;);
+        i++;
+      }
+      &lt;View&gt; {items} &lt;/View&gt;
+    </pre>
+      
+    </section>
+    
+    <h4>ForEach Loop:</h4>
+     <section class="codes">
+    <pre>
+      const arr = ['Item 1', 'Item 2', 'Item 3'];
+      arr.forEach((item, index) =&gt; {
+        items.push(&lt;Text key={index}&gt;{item}&lt;/Text&gt;);
+      });
+      &lt;View&gt; {items} &lt;/View&gt;
+    </pre>
+        </section>
+  </div>
+
+
+
+  <button class="collapsible">11.5.4.5 use the Technical Capabilities of Smartphones when developing</button>
+  <div class="content">
+    <h3>Using Smartphone Technical Capabilities</h3>
+    <p>React Native allows you to access various technical capabilities of smartphones, such as:</p>
+    <ul>
+      <li><b>Camera:</b> Access the device’s camera to capture photos or videos.</li>
+      <li><b>Location:</b> Use GPS to get the user's current location.</li>
+      <li><b>Vibration:</b> Trigger vibrations on the device.</li>
+    </ul>
+ 
+
+
+    <h3>Publishing an Application on the Network</h3>
+    <p>Once your mobile app is ready, you can upload it to app stores such as Google Play or Windows Phone Store. Follow these steps:</p>
+    <ul>
+      <li>Sign up for a developer account on Google Play or Windows Phone Store.</li>
+      <li>Build the APK (for Android) or APPX (for Windows).</li>
+      <li>Upload the app through the respective store's dashboard.</li>
+      <li>Provide details like app description, screenshots, and pricing.</li>
+      <li>Submit the app for review and approval.</li>
+    </ul>
+    <p>Once approved, the app will be available for download in the store.</p>
+  </div>
+
+``
+ 
+ 
+  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+  
+         
+
+    
+    </body>
+</html>
+
